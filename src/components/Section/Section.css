@@ -1,0 +1,24 @@
+.section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+/* Background variants */
+.section.bg-light {
+  background-color: var(--color-bg-light);
+}
+
+.section.bg-dark {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-on-dark);
+}
+
+.section.bg-accent {
+  background-color: var(--color-accent);
+  color: var(--color-text-on-accent);
+}
+
+/* Optional: add a border or rule for debugging or separation */
+.section + .section {
+  border-top: 1px solid var(--color-border-muted);
+}

@@ -1,0 +1,75 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--baseline);
+  padding-bottom: var(--space-xsm);
+  font-family: var(--font-body);
+  position: relative;
+  width: 100%;
+}
+
+/* Horizontal rules on either side of nav links */
+.nav::before,
+.nav::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 var(--space-md);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.2rem 0.5rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Hover & focus state */
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #fff2ea;
+  color: #a84112;
+  outline: none;
+}
+
+/* Active state */
+.nav-link.active {
+  color: #111;
+  background-color: transparent;
+}
+
+.nav-link.active:hover,
+.nav-link.active:focus {
+  background-color: transparent;
+  color: #111;
+}
+
+/* Active underline indicator */
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.25rem;
+  right: 0.25rem;
+  height: 1px;
+  background-color: #111;
+}

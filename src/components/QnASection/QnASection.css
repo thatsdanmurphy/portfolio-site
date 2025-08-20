@@ -1,0 +1,14 @@
+.qna-section {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  padding: 0 var(--space-sm);
+}
+
+.qna-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,36 @@
+/* PageTitle.css */
+.page-title {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-lg);     /* 24px */
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--baseline-half);
+  letter-spacing: -0.01em;
+}
+
+
+.page-title.align-center {
+  text-align: center;
+}
+
+.page-title.align-right {
+  text-align: right;
+}
+
+.page-title .subtitle {
+  margin-top: var(--baseline-half);
+  color: var(--color-text-muted);
+}
+
+/* Visually hide additional SEO copy but keep it readable for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+

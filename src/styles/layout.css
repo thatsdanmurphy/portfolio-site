@@ -1,0 +1,179 @@
+:root {
+  --baseline: 1.5rem;
+  --gutter: clamp(1rem, 3vw, 2rem);
+  --max-width: 1200px;
+}
+
+/* ===== Layout ===== */
+.layout-container {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  box-sizing: border-box;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: var(--space-ml);
+}
+
+@media (min-width: 640px) { .layout-grid { grid-template-columns: repeat(8, 1fr); } }
+@media (min-width: 1024px) { .layout-grid { grid-template-columns: repeat(12, 1fr); } }
+
+.layout-grid.debug > * {
+  background-color: rgba(255, 0, 0, 0.05);
+  outline: 1px dashed rgba(255, 0, 0, 0.3);
+}
+
+/* Column spans */
+.col-span-1  { grid-column: span 1 / span 1; }
+.col-span-2  { grid-column: span 2 / span 2; }
+.col-span-3  { grid-column: span 3 / span 3; }
+.col-span-4  { grid-column: span 4 / span 4; }
+
+@media (min-width: 640px) {
+  .sm\:col-span-1  { grid-column: span 1 / span 1; }
+  .sm\:col-span-2  { grid-column: span 2 / span 2; }
+  .sm\:col-span-3  { grid-column: span 3 / span 3; }
+  .sm\:col-span-4  { grid-column: span 4 / span 4; }
+  .sm\:col-span-5  { grid-column: span 5 / span 5; }
+  .sm\:col-span-6  { grid-column: span 6 / span 6; }
+  .sm\:col-span-7  { grid-column: span 7 / span 7; }
+  .sm\:col-span-8  { grid-column: span 8 / span 8; }
+}
+
+@media (min-width: 1024px) {
+  .md\:col-span-1  { grid-column: span 1 / span 1; }
+  .md\:col-span-2  { grid-column: span 2 / span 2; }
+  .md\:col-span-3  { grid-column: span 3 / span 3; }
+  .md\:col-span-4  { grid-column: span 4 / span 4; }
+  .md\:col-span-5  { grid-column: span 5 / span 5; }
+  .md\:col-span-6  { grid-column: span 6 / span 6; }
+  .md\:col-span-7  { grid-column: span 7 / span 7; }
+  .md\:col-span-8  { grid-column: span 8 / span 8; }
+  .md\:col-span-9  { grid-column: span 9 / span 9; }
+  .md\:col-span-10 { grid-column: span 10 / span 10; }
+  .md\:col-span-11 { grid-column: span 11 / span 11; }
+  .md\:col-span-12 { grid-column: span 12 / span 12; }
+}
+
+/* ===== Art Signup Section ===== */
+.art-signup-block { margin-top: var(--space-md); }
+
+.art-signup-inner {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 var(--space-sm);
+  max-width: var(--max-width, 960px);
+}
+
+.art-signup-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .art-signup-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+  }
+  .signup-image { flex: 0 0 auto; max-width: 280px; }
+  .signup-text  { flex: 0 1 36ch; text-align: left; }
+  .signup-text-inner {
+    display: flex; flex-direction: column; justify-content: center; height: 100%;
+  }
+}
+
+.signup-text-inner > *:first-child { margin-top: 0; }
+.signup-text-inner > *:last-child  { margin-bottom: 0; }
+
+/* ===== Email Signup Form (clean + responsive) ===== */
+.email-signup-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content; /* field shrinks, button holds */
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.email-signup-form input[type="email"] {
+  min-width: 0;                 /* allow shrink */
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;              /* prevents iOS zoom */
+  background-color: var(--color-bg, #fffdf8);
+  color: var(--color-text, #1a1a1a);
+  border: 1.5px solid var(--color-muted, #ccc);
+  border-radius: var(--radius, 4px);
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.email-signup-form input[type="email"]::placeholder {
+  color: rgba(26,26,26,.55);
+}
+
+.email-signup-form input[type="email"]:focus {
+  border-color: var(--color-accent, #a84112);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent, #a84112) 25%, transparent);
+}
+
+.email-signup-form button {
+  white-space: nowrap;
+  min-width: 9.25rem;           /* keep “Notify Me” on one line */
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 0;
+  border-radius: var(--radius, 4px);
+  background-color: var(--color-accent, #a84112);
+  color: #fff;
+  cursor: pointer;
+  transition: transform .06s ease, opacity .2s ease, background-color .2s ease;
+}
+
+.email-signup-form button:hover   { background-color: var(--color-accent-hover, #d1551c); }
+.email-signup-form button:active  { transform: translateY(1px); }
+.email-signup-form button[disabled] {
+  opacity: .7;
+  cursor: progress;
+}
+
+/* Tighten on smaller phones */
+@media (max-width: 420px) {
+  .email-signup-form { gap: 6px; }
+  .email-signup-form button { min-width: 8.5rem; padding: 9px 12px; }
+  .email-signup-form input[type="email"] { padding: 9px 10px; }
+}
+
+/* ===== A11y utilities ===== */
+.skip-link {
+  position: absolute; inset: 0 auto auto 0;
+  width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%);
+  white-space: nowrap; border: 0;
+}
+.skip-link:focus, .skip-link:focus-visible {
+  clip: auto; clip-path: none; width: auto; height: auto; margin: 0;
+  padding: .5rem .75rem; z-index: 1000;
+  background: var(--color-bg, #fffdf8); color: var(--color-text, #1a1a1a);
+  border: 1px solid var(--color-text, #1a1a1a);
+  border-radius: var(--radius, 4px);
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+  transform: translate(1rem, 1rem);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px; overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); white-space: nowrap;
+  border: 0; padding: 0; margin: -1px;
+}

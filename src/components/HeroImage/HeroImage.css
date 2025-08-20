@@ -1,0 +1,15 @@
+/* src/components/HeroImage/HeroImage.css */
+.hero-image-container {
+    margin-top: var(--space-xl); /* or 3xl on desktop */
+  width: 100%;
+  margin-bottom: var(--space-md);
+  padding-left: 1.8em;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  height: 200px; /* Approx. 2.2 inches on most screens */
+  width: auto;
+  object-fit: contain;
+}

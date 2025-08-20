@@ -1,0 +1,171 @@
+/* === SECTION WRAPPER === */
+.gallery-strip-section {
+  max-width: var(--page-max, 1100px);
+  margin-inline: auto;
+  padding-inline: var(--space-lg);   /* ← same as the rest of your sections */
+}
+
+/* === STRIP WRAPPER & TRACK === */
+/* outer container keeps arrows visible */
+.gallery-strip-outer {               /* no hacks here */
+  position: relative;
+  overflow: visible;
+  margin: 0;                         /* ← ensure no negative margins linger */
+}
+
+/* inner wrapper only masks the scrolling strip */
+.gallery-strip-wrapper {
+  overflow: hidden;   /* ✅ keeps images neat inside */
+}
+
+/* === SECTION HEADING === */
+.section-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.marker-line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-divider, #ccc);
+}
+
+.marker-icon {
+  font-size: 1rem;
+  color: var(--color-accent, #D94825);
+}
+
+.section-label {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin: var(--space-md) 0;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* === STRIP WRAPPER & TRACK === */
+.gallery-strip-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding-inline: var(--space-sm);
+  /* keep scroll comfort so first/last tile snap fully into view */
+  scroll-padding-inline: var(--space-sm); /* new */
+}
+
+.gallery-strip {
+  display: flex;
+  gap: var(--space-sm);
+  will-change: transform;
+  transform: translateX(0);
+  transition: transform 0.1s linear;
+}
+
+/* === INDIVIDUAL CARD === */
+.strip-item {
+  margin: 0;
+  flex: 0 0 auto;
+  width: clamp(220px, 26vw, 280px);
+  background: transparent;
+}
+
+/* maintain uniform ratio */
+.strip-item img {
+  aspect-ratio: 1 / 1;      /* ✅ forces square */
+  object-fit: cover;             /* ✅ crops if needed but fills frame */
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  display: block;
+}
+
+/* === CAPTION === */
+.gallery-caption {
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  color: var(--color-muted);
+  padding: var(--space-md) 0 0;
+  line-height: var(--line-height-tight);
+  background: transparent;
+}
+
+/* === HIDE SCROLLBAR === */
+.gallery-strip::-webkit-scrollbar {
+  display: none;
+}
+.gallery-strip {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* === CURSOR STATE IF WE ADD DRAG === */
+.gallery-strip.scrolling {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+/* === GALLERY STRIP NAVIGATION BUTTONS === */
+.gallery-nav {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: white;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-nav:hover,
+.gallery-nav:focus {
+   background-color: #f1d3cc; /* flat version of D94825 @ 12% over white */
+  transform: scale(1.05) translateY(-50%);
+}
+
+/* nav buttons just outside the container */
+.gallery-nav-left {
+  left: .5rem; /* sits just outside padding */
+}
+
+.gallery-nav-right {
+  right: .5rem;
+}
+
+.gallery-nav svg {
+  width: 1rem;
+  height: 1rem;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.gallery-nav:focus:not(:hover),
+.gallery-nav:active:not(:hover) {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .gallery-nav {
+    top: 40%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+    .gallery-nav-left { left: .5rem; }
+  .gallery-nav-right { right: .5rem; }
+}

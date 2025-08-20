@@ -1,0 +1,6 @@
+# Allow all search engines to index
+User-agent: *
+Allow: /
+
+# Point to sitemap
+Sitemap: https://danmurphy.work/sitemap.xml
