@@ -77,7 +77,7 @@ function handleIframeLoad() {
             icon={readIcon}
             alt="red icon with ear and mouth"
             items={[
-              "The Nineties: I like cultural reflections. This is one I was actually part of. Wild to see how people used to accept things as fact in a converation without a screen nearby.",
+              "The Nineties: I like cultural reflections. This is one I was actually part of. Wild to see how people used to accept things as fact in a conversation without a screen nearby.",
               "Reading Range: carrying the reminder that depth comes from moving wide, not fast.",
               "Following AI Daily Briefing: keeping track of what's going on in the space."
             ]}
