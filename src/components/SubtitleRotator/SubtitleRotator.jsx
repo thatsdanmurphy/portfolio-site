@@ -13,7 +13,7 @@ export default function SubtitleRotator() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setIndex(prev => (prev + 1) % subtitles.length);
-    }, 2500); // rotate every 2.5 seconds
+    }, 3000); // rotate every 2.5 seconds
     return () => clearInterval(interval);
   }, [subtitles.length]);
 
