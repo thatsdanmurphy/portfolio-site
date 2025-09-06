@@ -8,8 +8,9 @@ import qnaItems from "../content/qnaItems";
 
 export default function About() {
   const aboutIntro = [
-    "I’m Dan Murphy, a principal product designer who works where humans meet technology. For over 10 years, I’ve led design for mobile apps, wearables, and autonomous vehicles at Accenture, Walmart, Fidelity, and Motional. I work fluidly from rough sketches and prototypes to systems that scale. Off screen, I paint, play music, and cook with the same energy I bring into design work.",
-    "I focus on clarity and craft, going from uncovering problems with teams to shaping ideas through prototypes and motion. My work spans early discovery, design systems, and commercialization, always with a focus on making tech feel intuitive and human."
+    "I’m Dan Murphy, a principal product designer who works in the space where humans meet technology.",
+    "For over 10 years, I’ve led design for mobile apps, wearables, and autonomous vehicles at Accenture, Walmart, Fidelity, and Motional. I work fluidly from rough sketches and prototypes to systems that scale. Off screen, I draw, paint, and play music with the same energy I bring into design work.",
+    "I bring an attention toward clarity and craft, going from uncovering problems with teams to shaping ideas through prototypes and motion. My work spans early discovery, design systems, and commercialization, always with a focus on making tech feel intuitive and human."
   ];
 
   return (

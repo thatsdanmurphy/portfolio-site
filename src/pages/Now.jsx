@@ -66,9 +66,9 @@ function handleIframeLoad() {
             icon={learnIcon}
             alt="red brain icon"
             items={[
-              "Exploring outcomes of past analog revolutions like how trains led to things like map printing and mass labeling, considering how that translates to today.",
-              "Working with AI as a partner, prototyping, experimenting, and keeping an eye on what others are digging into.",
-              "Practicing Backstreets on guitar. The phrasing in the lyrics is tricky!"
+              "Exploring outcomes of past analog revolutions: like how trains led to things like map printing and mass labeling, considering how that translates to today.",
+              "Working with AI as a partner: prototyping, experimenting, and keeping an eye on what others are digging into.",
+              "Practicing Backstreets on guitar and vocals: The phrasing in the lyrics is tricky!"
             ]}
           />
 
@@ -78,8 +78,8 @@ function handleIframeLoad() {
             alt="red icon with ear and mouth"
             items={[
               "The Nineties: I like cultural reflections. This is one I was actually part of. Wild to see how people used to accept things as fact in a conversation without a screen nearby.",
-              "Reading Range: carrying the reminder that depth comes from moving wide, not fast.",
-              "Following AI Daily Briefing: keeping track of what's going on in the space."
+              "Reading Range: carrying the reminder that depth can come from breadth, not just repetition.",
+              "Following AI Daily Briefing: keeping track of what's going on in the space, and deploying AI techniques in my own work."
             ]}
           />
 
@@ -89,9 +89,9 @@ function handleIframeLoad() {
             alt="red hand icon"
             items={[
               "Obscure themed dinner parties: part sensory experiment, part artist showcase.",
-              "Rebuilt this site from scratch: moved off Squarespace and learned a lot doing it solo.",
+              "Took on a challenge: of rebuilding my portfolio site, learning new tools and exploring how AI supports design — and where it doesn’t.",
               "Expanding my music collection: wandering into new pockets and older corners.",
-              "Fishing with my dad and kids: fixing up an old fishing rod and getting outside."
+              "Fishing with the family: fixing up an old fishing rod and getting outside."
             ]}
           />
         </div>

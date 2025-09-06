@@ -17,21 +17,21 @@ const impactItems = [
     label: "IC · Security UX · Growth"
   },
   {
-    title: "Shaped Fidelity’s Financial Feed for Engagement",
+    title: "Contributed to Fidelity’s High-Engagement Feed",
     detail:
       "Supported early concepting and interaction design on a discovery hub that engaged 50% of users at launch and earned a Webby honorable mention.",
     label: "IC · Discovery UX · Engagement"
   },
-  {
-    title: "Cut Bounce Rate from 86% to Site Average",
-    detail:
-      "Simplified SharkNinja’s first-of-its-kind “build-your-own” flow, cutting bounce from 86% to site average and lifting conversion.",
-    label: "IC · eCommerce UX · Conversion"
+ {
+  title: "Turned Drop-Off into Conversion",
+  detail:
+    "Simplified a multi-faceted product flow with SharkNinja, making add-ons easy to purchase and reducing bounce rate while improving conversion.",
+  label: "IC · eCommerce UX · Growth"
   },
   {
     title: "Built Early Design System Foundations",
     detail:
-      "Codified UI components across Fidelity’s mobile ecosystem before design systems lived in Figma or Sketch, cutting handoff churn and ensuring parity across platforms.",
+      "Codified UI components across Fidelity’s mobile ecosystem before design systems lived in Figma or Sketch, reducing handoff churn and ensuring continuity across platforms.",
     label: "Design Systems · Collaboration"
   },
   {

@@ -2,7 +2,7 @@ const qnaItems = [
   {
     question: "How do you approach messy problems?",
     answer:
-      "I break them down. I ask what success looks like. I ask what failure would look like. Then I map the steps that lead to either. I learned this at Accenture scoping proposals. I used it at Motional when we built a system for driverless delivery."
+      "I break them down. I ask what success looks like. I ask what failure would look like. Then I map the steps that might lead to success or failiure. I learned this at Accenture scoping proposals. I used it at Motional when we built a system for driverless delivery."
   },
   {
     question: "How do you re-light a team that’s gone dim?",
@@ -25,9 +25,9 @@ const qnaItems = [
       "I try to keep speed from killing warmth. A product can be fast and still feel human. Tone matters. It always does."
   },
   {
-    question: "Are you even good?",
+    question: "What makes you good?",
     answer:
-      "I am. I do not shout about it. I stay curious. I show up. I try to leave the work and the people better than I found them."
+      "I listen, I prototype, I build with others. Good work comes from teams that learn together."
   }
 ];
 
