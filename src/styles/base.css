@@ -122,6 +122,10 @@ a {
   text-underline-offset: 0.15em;
 }
 
+.art-link:hover {
+  color: var(--color-accent);
+}
+
 /* Images */
 img {
   max-width: 100%;
