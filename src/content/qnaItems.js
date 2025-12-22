@@ -2,32 +2,32 @@ const qnaItems = [
   {
     question: "How do you approach messy problems?",
     answer:
-      "I break them down. I ask what success looks like. I ask what failure would look like. Then I map the steps that might lead to success or failiure. I learned this at Accenture scoping proposals. I used it at Motional when we built a system for driverless delivery."
+      "I break them down asking what success looks like as well as failure. Then I map the steps that might lead to either end. This usually starts to surface the key decisions that need to be made."
   },
   {
-    question: "How do you re-light a team that’s gone dim?",
+    question: "What helps a stalled team or situation move again?",
     answer:
-      "I get people talking. I put the work in front of them. I show why it matters. I make space for them to share and learn. The energy comes back piece by piece. That is how a team repairs itself."
+      "Get people talking and put the work back in front of them. Realign on why it matters and what we’re trying to do together. That shared sense of purpose is usually what gets things moving again."
   },
   {
-    question: "What’s a feature you regret shipping?",
+    question: "What’s a decision you’d rethink if you had the chance?",
     answer:
-      "Auto opt-in for driverless delivery. Some people liked it. Others were confused and upset. It led to drop-offs and missed hand-offs. We fixed the awareness gap. The lesson stayed with me. Business goals cannot outpace human needs."
+      "We defaulted people into driverless delivery instead of asking them to opt in. Some liked it. Some were confused or caught off guard, which led to missed hand-offs and frustration. We worked hard to better set expectations and build awareness. The lesson I continue on with is that business goals need to be interlocked with human perspective."
   },
   {
     question: "What’s something you’d fix, even if no one asked you to?",
     answer:
-      "Naming and file structure. It looks small. It is not small. It shapes how teams work and think. A clean system frees energy for the real work."
+      "Naming and file structure. It seems small, but it shapes how teams work and think. A clean system frees energy for the real work."
   },
   {
-    question: "What’s a tension you protect in your work?",
+    question: "What do you try to hold onto as the work speeds up?",
     answer:
-      "I try to keep speed from killing warmth. A product can be fast and still feel human. Tone matters. It always does."
+      "The feeling that this was made by someone, for someone. When things pick up, that can fade and I try to hold onto it."
   },
   {
     question: "What makes you good?",
     answer:
-      "I listen, I prototype, I build with others. Good work comes from teams that learn together."
+      "I listen, prototype, and build with others. Good work comes from teams that learn together."
   }
 ];
 

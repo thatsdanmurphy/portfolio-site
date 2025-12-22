@@ -55,7 +55,7 @@ export default function Now() {
               alt="red brain icon"
               items={[
 
-                "Guitar: working through John Prine picking patterns and tunes. “How Lucky” is one I keep going back to.",
+                "Guitar: working through John Prine picking patterns and tunes. \"How Lucky\" is one I keep going back to.",
                 "Staying curious: about new AI tools by actually building with them.",
                 "Wood carving and small reliefs: I've been seeing other artists dive into this, and I've been starting to test it out."
               ]}
@@ -66,7 +66,7 @@ export default function Now() {
               icon={readIcon}
               alt="red icon with ear and mouth"
               items={[
-                "Sirens Call + Amusing Ourselves to Death: Both heavy reflections on what digital life does on a community and individual level.",
+                "Sirens Call + Amusing Ourselves to Death: Both heavy reflections on technology in the community.",
                 "Fahrenheit 451 + Brave New World: I’ve been finding a lot of inspiration in science fiction starting to inform how I think about digital design.",
               ]}
             />
@@ -76,8 +76,8 @@ export default function Now() {
               icon={makeIcon}
               alt="red hand icon"
               items={[
-                "Soup season: I’m experimenting with recipes, but also the process — the smell in the kitchen, the pace, the comfort of it.",
-                "Prototyping: Carrying on with an online thrift store concept with a literary connections."
+                "Soup season: I’m experimenting and lately taken by the pace, the process, and the smell in the kitchen.",
+                "Prototyping: Moving along with an online thrift store concept with a literary twist."
               ]}
             />
           </div>
