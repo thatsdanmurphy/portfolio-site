@@ -3,9 +3,10 @@ import ImageWithFallback from "../ImageWithFallback/ImageWithFallback";
 import PasswordModal from "../PasswordModal/PasswordModal"; // 👈 import
 import "./CaseStudyCard.css";
 
-export default function CaseStudyCard({ title, description, imageSrc, alt, pdfLink, gated, password = "design123" }) {
+export default function CaseStudyCard({ title, description, imageSrc, alt, pdfLink, gated, password = "design123",linkLabel = "View Case Study", }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  
   const handleOpenModal = (e) => {
     e.preventDefault();
     if (gated) {
@@ -32,8 +33,8 @@ export default function CaseStudyCard({ title, description, imageSrc, alt, pdfLi
           <p className="case-study-description">{description}</p>
           <div className="case-study-meta">
             <a href={pdfLink} className="case-study-link" onClick={handleOpenModal}>
-              View Case Study
-            </a>
+  {linkLabel}
+</a>
             {gated && <span className="case-study-note">Password required</span>}
           </div>
         </div>

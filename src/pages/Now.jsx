@@ -2,36 +2,32 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import Section from "../components/Section/Section";
+import CaseStudyCard from "../components/CaseStudyCard/CaseStudyCard";
+import "../components/CaseStudyCard/CaseStudyCard.css";
 import PageIntro from "../components/PageIntro/PageIntro";
 import ImageWithFallback from "../components/ImageWithFallback/ImageWithFallback";
 import canvasImage from "../components/assets/painting1-thumb.webp";
-import learnIcon from "../components/assets/icons/learn.webp";
-import readIcon from "../components/assets/icons/read.webp";
-import makeIcon from "../components/assets/icons/make.webp";
-import NowCard from "../components/NowCard/NowCard";
+import TNWthumb from "../components/assets/TNWthumb.png";
+import "./Now.css";
 
 export default function Now() {
-  const nowIntro = ["Here’s what I’m up to as of late."];
+  const nowIntro = ["Here’s what I’m up to lately."];
 
   return (
     <>
       <Helmet>
-        <title>Now · Dan Murphy</title>
+        <title>These Days · Dan Murphy</title>
         <meta
           name="description"
-          content="What Dan Murphy is focused on right now — current work, learning loops, and experiments."
+          content="What Dan Murphy is building, reading, and working through these days."
         />
-        <link rel="canonical" href="https://danmurphy.work/now" />
-
-        {/* Optional social preview override (falls back to site defaults if omitted) */}
-        <meta property="og:title" content="Now · Dan Murphy" />
+        <link rel="canonical" href="https://www.danmurphy.work/now" />
+        <meta property="og:title" content="These Days · Dan Murphy" />
         <meta
           property="og:description"
-          content="Current focus, projects in motion, and what’s next."
+          content="Projects in motion, books in the background, and what’s currently holding my attention."
         />
         <meta property="og:image" content="/og-image.png" />
-
-        {/* Optional: make it lower-priority in search, but still indexable */}
         <meta
           name="robots"
           content="index,follow,max-snippet:-1,max-image-preview:large"
@@ -39,93 +35,95 @@ export default function Now() {
       </Helmet>
 
       <Section>
-        <h1 className="visually-hidden">What Dan Murphy is Working on Now</h1>
+        <h1 className="visually-hidden">
+          What Dan Murphy is focused on these days
+        </h1>
 
         <div className="col-span-4 sm:col-span-6 md:col-span-8">
-          <div className="page-header">
-            <h2>Winter 25/26 Check-In</h2>
-            <PageIntro paragraphs={nowIntro} centered />
-          </div>
+          <div className="now-inner">
+            <div className="page-header">
+              <h2>Spring 2026</h2>
+              <PageIntro paragraphs={nowIntro} centered />
+            </div>
 
-          {/* Now Cards */}
-          <div className="case-study-list refined-layout">
-            <NowCard
-              title="Learning"
-              icon={learnIcon}
-              alt="red brain icon"
-              items={[
+            <div className="now-page">
+              <section className="now-group">
+                <p className="now-label">Projects in motion</p>
 
-                "Guitar: working through John Prine picking patterns and tunes. \"How Lucky\" is one I keep going back to.",
-                "Staying curious: about new AI tools by actually building with them.",
-                "Wood carving and small reliefs: I've been seeing other artists dive into this, and I've been starting to test it out."
-              ]}
-            />
-
-            <NowCard
-              title="Reading & Listening"
-              icon={readIcon}
-              alt="red icon with ear and mouth"
-              items={[
-                "Sirens Call + Amusing Ourselves to Death: Both heavy reflections on technology in the community.",
-                "Fahrenheit 451 + Brave New World: I’ve been finding a lot of inspiration in science fiction starting to inform how I think about digital design.",
-              ]}
-            />
-
-            <NowCard
-              title="Experiments"
-              icon={makeIcon}
-              alt="red hand icon"
-              items={[
-                "Soup season: I’m experimenting and lately taken by the pace, the process, and the smell in the kitchen.",
-                "Prototyping: Moving along with an online thrift store concept with a literary twist."
-              ]}
-            />
-          </div>
-
-          {/* Section Divider */}
-          <div className="section-marker standard-gap">
-            <span className="marker-line" aria-hidden="true"></span>
-            <span className="marker-icon" aria-hidden="true">
-              ✷
-            </span>
-            <span className="marker-line" aria-hidden="true"></span>
-          </div>
-
-          {/* Art Block (no signup) */}
-          <div className="art-signup-block">
-            <h3 className="section-label">I paint too</h3>
-
-            <div className="art-signup-inner">
-              <div className="art-signup-content">
-                <div className="signup-image">
-                  <ImageWithFallback
-                    src={canvasImage}
-                    alt="Backside of canvas with crossbar"
-                    ratio="4 / 3"
-                    variant="gallery"
+                <div className="case-study-list">
+                  <CaseStudyCard
+                    title="The Number Wall"
+                    description="A living archive of legendary sports numbers: Exploring who actually defined a number."
+                    imageSrc={TNWthumb}
+                    alt="The Number Wall thumbnail"
+                    pdfLink="https://thenumberwall.com"
+                    linkLabel="View Site"
                   />
                 </div>
 
-                <div className="signup-text">
-                  <div className="signup-text-inner">
-                    <p>
-  Outside my design work, painting has been part of my life for a long time.
-  I paint from observation, memory, and photographs. I love scenes of Boston, old vehicles, and
-  classical pieces, often chasing adventures in color and light.
-</p>
+              </section>
 
-<p>
-  If you want to see what I’ve been working on lately, it’s over at{" "}
-  <a
-    href="https://danmurphy.studio"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="art-link"
-  >
-    danmurphy.studio
-  </a>
-  .
-</p>
+              <section className="now-group">
+                <p className="now-label">In the background</p>
+
+                <div className="now-text-block">
+                  <p>
+                    <strong>Guitar:</strong> Working on memorization across lyrics, chords and strumming. If I get a few tunes together, I might muster up the courage for an open mic.
+                  </p>
+
+                  <p>
+                    <strong>Cardboard sculptures:</strong> Started with a couple snow days with the kids. And now I'm on a new adventures. Inspired by the work of Wayne White.
+                  </p>
+                </div>
+              </section>
+
+              <div className="section-marker standard-gap">
+  <span className="marker-line" aria-hidden="true"></span>
+  <span className="marker-icon" aria-hidden="true">
+    ✷
+  </span>
+  <span className="marker-line" aria-hidden="true"></span>
+</div>
+
+              <div className="art-signup-block">
+                <h3 className="section-label">I paint too</h3>
+
+                <div className="art-signup-inner">
+                  <div className="art-signup-content">
+                    <div className="signup-image">
+                      <ImageWithFallback
+                        src={canvasImage}
+                        alt="Backside of canvas with crossbar"
+                        ratio="4 / 3"
+                        variant="gallery"
+                      />
+                    </div>
+
+                    <div className="signup-text">
+                      <div className="signup-text-inner">
+                        <p>
+                          Outside my design work, painting has been part of my
+                          life for a long time. I paint from observation,
+                          memory, and photographs. I love scenes of Boston, old
+                          vehicles, and classical pieces, often chasing
+                          adventures in color and light.
+                        </p>
+
+                        <p>
+                          If you want to see what I’ve been working on lately,
+                          it’s over at{" "}
+                          <a
+                            href="https://danmurphy.studio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="art-link"
+                          >
+                            danmurphy.studio
+                          </a>
+                          .
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
