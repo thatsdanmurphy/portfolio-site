@@ -23,7 +23,7 @@
 }
 
 .now-inner {
-  max-width: 60ch;
+  max-width: var(--content-width);
   margin: 0 auto;
 }
 .section-marker.standard-gap {

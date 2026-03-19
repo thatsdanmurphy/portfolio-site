@@ -16,7 +16,7 @@
   box-sizing: border-box;
   gap: var(--space-md);
   width: 100%;         /* fill parent */
-  max-width: 720px;  
+  max-width: var(--block-width);
 }
 
 .case-study-image-wrapper {

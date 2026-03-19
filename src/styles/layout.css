@@ -4,6 +4,16 @@
   --max-width: 1200px;
 }
 
+/* ===== Page Shell ===== */
+.page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.site-header {
+  text-align: center;
+}
+
 /* ===== Layout ===== */
 .layout-container {
   max-width: var(--max-width);

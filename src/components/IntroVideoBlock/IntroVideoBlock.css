@@ -1,41 +1,16 @@
 .intro-video-block {
-  margin-top: calc(var(--baseline) * 2);
+  margin-top: var(--space-xl);
   margin-bottom: var(--space-xl);
 }
 
-/* Remove framing */
 .video-wrapper {
   position: relative;
-  width: 62ch;
-  aspect-ratio: 16/9;      /* or 3/2 if your shot feels better */
+  width: var(--content-width);
+  max-width: 100%;
+  aspect-ratio: 16/9;
   overflow: hidden;
-  background: var(--off-white, #fdfbf7);
-  margin: var(--baseline) 0;
-  /* no border-radius / no shadow */
-}
-
-/* Keep full width on small screens (so it isn't too tight) */
-@media (min-width: 0px) {
-  .video-wrapper {
-    max-width: 100%;  
-    margin: auto;      /* fill the grid track on mobile */
-  }
-}
-
-/* Match a comfortable text measure on tablets */
-@media (min-width: 640px) {
-  .video-wrapper {
-    max-width: 100%;        /* aligns visually with paragraph line length */
-    margin: auto;    
-  }
-}
-
-/* Widen a touch for desktop, but keep it editorial—not full-bleed */
-@media (min-width: 1024px) {
-  .video-wrapper {
-    max-width: 62ch;        /* tweak to taste (68–76ch range) */
-    margin: auto;    
-  }
+  background: var(--color-bg);
+  margin: 0 auto;
 }
 
 .intro-video {
