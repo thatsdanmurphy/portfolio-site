@@ -3,19 +3,19 @@
   padding-bottom: var(--space-xl);
 }
 
-/* Background variants */
-.section.bg-light {
-  background-color: var(--color-bg-light);
+/* Background variants — match Section.jsx: section--bg-${background} */
+.section.section--bg-light {
+  background-color: var(--color-background-muted);
 }
 
-.section.bg-dark {
-  background-color: var(--color-bg-dark);
-  color: var(--color-text-on-dark);
+.section.section--bg-dark {
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
-.section.bg-accent {
+.section.section--bg-accent {
   background-color: var(--color-accent);
-  color: var(--color-text-on-accent);
+  color: #fff;
 }
 
 /* Optional: add a border or rule for debugging or separation */

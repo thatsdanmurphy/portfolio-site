@@ -16,8 +16,8 @@ export default function Footer() {
           Interested in working together?
           <br />
           Email me at{" "}
-          <a href="mailto:hello@danmurphy.studio" className="email-link">
-            hello@danmurphy.studio
+          <a href="mailto:hello@danmurphy.work" className="email-link">
+            hello@danmurphy.work
           </a>.
         </p>
       </div>

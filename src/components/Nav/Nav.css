@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   padding-top: var(--baseline);
-  padding-bottom: var(--space-xsm);
-  font-family: var(--font-body);
+  padding-bottom: var(--space-xs);
+  font-family: var(--font-sans);
   position: relative;
   width: 100%;
 }

@@ -16,10 +16,10 @@ export default function App() {
       <Layout content={content}>
         <Routes>
           <Route path="/" element={<About />} />
-  <Route path="/work" element={<Work />} />
-  <Route path="/now" element={<Now />} />
-  <Route path="*" element={<NotFound />} />
-  <Route path="/404" element={<NotFound />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/now" element={<Now />} />
+          <Route path="/404" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </Router>

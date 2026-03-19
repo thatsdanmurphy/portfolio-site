@@ -35,12 +35,7 @@ export default function Layout({ content, children }) {
               <SubtitleRotator
                 subtitles={content.subtitle_rotator?.split(" | ") || []}
               />
-              <Nav
-                links={content.nav_links?.split(" | ") || []}
-                current={
-                  window.location.pathname === "/work" ? "work" : "about"
-                }
-              />
+              <Nav />
             </section>
           )}
 

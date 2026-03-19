@@ -26,20 +26,36 @@
   /* Vertical Rhythm Unit */
   --baseline: 1.5rem; /* 24px baseline */
 
-    /* Vertical Spacing */
+  /* Vertical Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
+  --space-ml: 1.75rem;  /* between md and lg */
   --space-lg: 2rem;
   --space-xl: 3rem;
+
+  /* Border Radius */
+  --radius: 4px;
+  --radius-sm: 2px;
+
+  /* Max Widths */
+  --page-max: 1200px;
 
   /* Baseline Colors */
   --color-bg: #fffdf9;
   --color-text: #111;
   --color-accent: #cc3300;
   --color-muted: #666;
+  --color-text-muted: #666;
   --color-veil: #ddd;
-  
+  --color-divider: #ccc;
+  --color-background-muted: #f5f3f0;
+  --color-border-muted: #e5e2dd;
+  --color-hover-bg: #f7f3ef;
+
+  /* Font aliases */
+  --font-size-base: var(--font-size-sm);
+
 }
 
 /* Box Sizing & Resets */

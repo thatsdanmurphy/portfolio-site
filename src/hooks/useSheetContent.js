@@ -16,7 +16,7 @@ const useSheetContent = () => {
         });
         setContent(output);
       });
-  }, [csvUrl]);
+  }, []); // csvUrl is a constant — no need to re-run on change
 
   return content;
 };
