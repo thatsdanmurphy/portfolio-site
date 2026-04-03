@@ -15,11 +15,12 @@ export default function App() {
     <Router>
       <Layout content={content}>
         <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/now" element={<Now />} />
-          <Route path="/404" element={<NotFound />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/"      element={<Now />}      />
+          <Route path="/now"   element={<Now />}      />
+          <Route path="/about" element={<About />}    />
+          <Route path="/work"  element={<Work />}     />
+          <Route path="/404"   element={<NotFound />} />
+          <Route path="*"      element={<NotFound />} />
         </Routes>
       </Layout>
     </Router>
