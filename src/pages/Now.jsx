@@ -6,27 +6,26 @@ import PageIntro from "../components/PageIntro/PageIntro";
 import ImageWithFallback from "../components/ImageWithFallback/ImageWithFallback";
 import ProjectGrid from "../components/ProjectGrid/ProjectGrid";
 import canvasImage from "../components/assets/painting1-thumb.webp";
-import TNWthumb from "../components/assets/TNWthumb.png";
 import "./Now.css";
 
 const projects = [
   {
     title: "The Number Wall",
     url: "https://thenumberwall.com",
-    image: TNWthumb,
-    description: "A living archive of legendary sports numbers — exploring who actually defined one.",
+    image: "/TNW.jpg",
+    description: "A living archive of legendary sports numbers, exploring who actually defined one.",
   },
   {
     title: "This Is Your Attention",
     url: "https://thisisyourattention.com",
-    image: null, // screenshot coming
+    image: "/Attention.jpg",
     description: "A live calculation of what your attention is worth to the platforms currently holding it.",
   },
   {
     title: "Dan Murphy Services",
     url: "https://danmurphy.services",
-    image: null, // screenshot coming
-    description: "A proper home on the internet — design, build, and hosting for fractional professionals and small businesses.",
+    image: "/ProperHome.jpg",
+    description: "A proper home on the internet, design, build, and hosting for fractional professionals.",
   },
 ];
 
