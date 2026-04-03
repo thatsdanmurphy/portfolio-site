@@ -3,9 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 import "./Nav.css";
 
 const links = [
-  { label: "About",     path: "/about" },
+    { label: "Now",       path: "/"      },
   { label: "Past Work", path: "/work"  },
-  { label: "Now",       path: "/"      },
+{ label: "About",     path: "/about" },
 ];
 
 export default function Nav() {
