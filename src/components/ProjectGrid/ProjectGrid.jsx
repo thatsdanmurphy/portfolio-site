@@ -14,9 +14,14 @@ export default function ProjectGrid({ projects }) {
           aria-label={project.title}
         >
           <div className="project-grid-image">
-            <img src={project.image} alt={project.title} />
+            {project.image && <img src={project.image} alt={project.title} />}
           </div>
-          <p className="project-grid-label">{project.title}</p>
+          <div className="project-grid-meta">
+            <p className="project-grid-title">{project.title}</p>
+            {project.description && (
+              <p className="project-grid-description">{project.description}</p>
+            )}
+          </div>
         </a>
       ))}
     </div>

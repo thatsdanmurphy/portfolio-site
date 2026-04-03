@@ -14,8 +14,20 @@ const projects = [
     title: "The Number Wall",
     url: "https://thenumberwall.com",
     image: TNWthumb,
+    description: "A living archive of legendary sports numbers — exploring who actually defined one.",
   },
-  // more projects coming — add here
+  {
+    title: "This Is Your Attention",
+    url: "https://thisisyourattention.com",
+    image: null, // screenshot coming
+    description: "A live calculation of what your attention is worth to the platforms currently holding it.",
+  },
+  {
+    title: "Dan Murphy Services",
+    url: "https://danmurphy.services",
+    image: null, // screenshot coming
+    description: "A proper home on the internet — design, build, and hosting for fractional professionals and small businesses.",
+  },
 ];
 
 export default function Now() {

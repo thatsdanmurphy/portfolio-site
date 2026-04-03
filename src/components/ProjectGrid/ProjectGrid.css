@@ -41,9 +41,24 @@
   opacity: 0.85;
 }
 
-.project-grid-label {
+.project-grid-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.project-grid-title {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin: 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.project-grid-description {
   font-size: var(--font-size-xs);
   color: var(--color-muted);
   margin: 0;
-  letter-spacing: 0.02em;
+  line-height: var(--line-height-normal);
 }
