@@ -1,0 +1,39 @@
+.impact-section {
+  margin-bottom: var(--space-xl);
+}
+
+.impact-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+}
+
+.shuffle-button-wrapper {
+  margin-top: var(--space-md);
+  display: flex;
+  justify-content: center;
+}
+
+.shuffle-button {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  padding: 0.5em 1em;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-veil);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shuffle-button:hover {
+  background-color: var(--color-hover-bg, #f7f3ef);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}

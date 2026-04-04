@@ -1,0 +1,21 @@
+.qna-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: var(--space-md);
+  background-color: #fffdf9;
+  margin-bottom: var(--space-md);
+}
+
+.qna-question {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-xs);
+}
+
+.qna-answer {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  line-height: var(--line-height-normal);
+}

@@ -1,0 +1,23 @@
+/* components/SubtitleRotator/SubtitleRotator.css */
+
+.subtitle-rotator {
+  text-align: center;
+  margin-top: var(--baseline);
+  font-family: var(--font-body, sans-serif);
+  font-size: 1rem;
+  color: var(--color-text, #444);
+}
+
+.subtitle-rotator span {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.subtitle-rotator span.active {
+  opacity: 1;
+  position: relative;
+}

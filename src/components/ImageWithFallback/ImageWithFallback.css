@@ -1,0 +1,22 @@
+/* src/components/ImageWithFallback/ImageWithFallback.css */
+
+.placeholder-image {
+  background-color: #eee;
+  width: 100%;
+  display: block;
+}
+
+.placeholder-image.default {
+  border-radius: 0;
+}
+
+.placeholder-image.card {
+  border-radius: 6px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.placeholder-image.gallery {
+  background-color: #ededed;
+  border: 1px solid #ddd;
+}

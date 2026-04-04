@@ -1,0 +1,24 @@
+.section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+/* Background variants — match Section.jsx: section--bg-${background} */
+.section.section--bg-light {
+  background-color: var(--color-background-muted);
+}
+
+.section.section--bg-dark {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.section.section--bg-accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+/* Optional: add a border or rule for debugging or separation */
+.section + .section {
+  border-top: 1px solid var(--color-border-muted);
+}
