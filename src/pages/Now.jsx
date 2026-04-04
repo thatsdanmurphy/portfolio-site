@@ -18,14 +18,14 @@ const projects = [
   {
     title: "This Is Your Attention",
     url: "https://thisisyourattention.com",
-    image: "/Attention.jpg",
+    image: "/attention.png",
     description: "A live calculation of what your attention is worth to the platforms currently holding it.",
   },
   {
-    title: "Dan Murphy Services",
+    title: "A Proper Home on the Internet",
     url: "https://danmurphy.services",
     image: "/ProperHome.png",
-    description: "A proper home on the internet, design, build, and hosting for fractional professionals.",
+    description: "Design, build, and hosting for fractional professionals and small businesses.",
   },
 ];
 
