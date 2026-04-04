@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import Section from "../components/Section/Section";
 import PageIntro from "../components/PageIntro/PageIntro";
 import ImageWithFallback from "../components/ImageWithFallback/ImageWithFallback";
-import ProjectGrid from "../components/ProjectGrid/ProjectGrid";
+import ProjectList from "../components/ProjectList/ProjectList";
 import canvasImage from "../components/assets/painting1-thumb.webp";
 import "./Now.css";
 
@@ -64,7 +64,7 @@ export default function Now() {
             <PageIntro paragraphs={nowIntro} centered />
           </div>
 
-          <ProjectGrid projects={projects} />
+          <ProjectList projects={projects} />
 
           <div className="now-page">
             <section className="now-group">
