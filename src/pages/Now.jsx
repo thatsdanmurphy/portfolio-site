@@ -12,7 +12,7 @@ const projects = [
   {
     title: "The Number Wall",
     url: "https://thenumberwall.com",
-    image: "/TNW.jpg",
+    image: "/tnw.gif",
     description: "A living archive of legendary sports numbers, exploring who actually defined one.",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Dan Murphy Services",
     url: "https://danmurphy.services",
-    image: "/ProperHome.jpg",
+    image: "/ProperHome.png",
     description: "A proper home on the internet, design, build, and hosting for fractional professionals.",
   },
 ];
@@ -35,13 +35,13 @@ export default function Now() {
   return (
     <>
       <Helmet>
-        <title>These Days · Dan Murphy</title>
+        <title>Now · Dan Murphy</title>
         <meta
           name="description"
           content="What Dan Murphy is building, reading, and working through these days."
         />
         <link rel="canonical" href="https://www.danmurphy.work/" />
-        <meta property="og:title" content="These Days · Dan Murphy" />
+        <meta property="og:title" content="Now · Dan Murphy" />
         <meta
           property="og:description"
           content="Projects in motion, books in the background, and what’s currently holding my attention."
