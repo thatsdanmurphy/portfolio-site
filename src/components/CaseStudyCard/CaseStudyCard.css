@@ -28,7 +28,7 @@
   justify-content: center;
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background-color: var(--color-background-muted); /* optional neutral bg */
+  background-color: #ffffff;
 }
 
 .case-study-image {

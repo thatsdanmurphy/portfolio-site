@@ -35,16 +35,20 @@
   background-color: var(--color-background-muted);
 }
 
-.project-list-image img {
+.project-list-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.4s ease;
 }
 
-.project-list-item:hover .project-list-image img {
+.project-list-img.fading {
+  opacity: 0;
+}
+
+.project-list-item:hover .project-list-img {
   transform: scale(1.04);
 }
 
