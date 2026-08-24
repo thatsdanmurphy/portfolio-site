@@ -1,33 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./ProjectList.css";
-
-function ProjectImage({ image, images, title }) {
-  const allImages = images || (image ? [image] : []);
-  const [current, setCurrent] = useState(0);
-  const [fading, setFading] = useState(false);
-
-  useEffect(() => {
-    if (allImages.length <= 1) return;
-    const interval = setInterval(() => {
-      setFading(true);
-      setTimeout(() => {
-        setCurrent((prev) => (prev + 1) % allImages.length);
-        setFading(false);
-      }, 400);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [allImages.length]);
-
-  if (!allImages.length) return null;
-
-  return (
-    <img
-      src={allImages[current]}
-      alt={title}
-      className={`project-list-img ${fading ? "fading" : ""}`}
-    />
-  );
-}
 
 export default function ProjectList({ projects }) {
   return (
@@ -42,11 +14,7 @@ export default function ProjectList({ projects }) {
           aria-label={`Visit ${project.title}`}
         >
           <div className="project-list-image">
-            <ProjectImage
-              image={project.image}
-              images={project.images}
-              title={project.title}
-            />
+            {project.image && <img src={project.image} alt={project.title} />}
           </div>
           <div className="project-list-meta">
             <span className="project-list-index">

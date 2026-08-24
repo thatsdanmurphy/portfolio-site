@@ -16,16 +16,16 @@ const projects = [
     description: "A living archive of legendary sports numbers, exploring who actually defined one.",
   },
   {
-    title: "This Is Your Attention",
-    url: "https://thisisyourattention.com",
-    image: "/attention.png",
-    description: "A live calculation of what your attention is worth to the platforms currently holding it.",
+    title: "Gig Herd",
+    url: "https://gigherd.com",
+    image: "/gigherd.png",
+    description: "Track shows, browse venue calendars, and plan concerts with friends.",
   },
   {
-    title: "A Proper Home on the Internet",
-    url: "https://danmurphy.services",
-    image: "/ProperHome.png",
-    description: "Design, build, and hosting for fractional professionals and small businesses.",
+    title: "This Is Your Attention",
+    url: "https://your-attention.vercel.app",
+    image: "/attention.png",
+    description: "A live calculation of what your attention is worth to the platforms currently holding it.",
   },
 ];
 
@@ -35,13 +35,13 @@ export default function Now() {
   return (
     <>
       <Helmet>
-        <title>Now · Dan Murphy</title>
+        <title>These Days · Dan Murphy</title>
         <meta
           name="description"
           content="What Dan Murphy is building, reading, and working through these days."
         />
         <link rel="canonical" href="https://www.danmurphy.work/" />
-        <meta property="og:title" content="Now · Dan Murphy" />
+        <meta property="og:title" content="These Days · Dan Murphy" />
         <meta
           property="og:description"
           content="Projects in motion, books in the background, and what’s currently holding my attention."
@@ -60,7 +60,7 @@ export default function Now() {
 
         <div className="now-inner">
           <div className="page-header">
-            <h2>Spring 2026</h2>
+            <h2>Fall 2026</h2>
             <PageIntro paragraphs={nowIntro} centered />
           </div>
 
@@ -71,10 +71,10 @@ export default function Now() {
               <p className="now-label">In the background</p>
               <div className="now-text-block">
                 <p>
-                  <strong>Guitar:</strong> Working on memorization across lyrics, chords and strumming. If I get a few tunes together, I might muster up the courage for an open mic.
+                  <strong>Guitar:</strong> Did my first open mic, performing <em>Up on the Roof</em> by Carole King… but forgot a verse, so I’m mustering the courage to get back out there.
                 </p>
                 <p>
-                  <strong>Cardboard sculptures:</strong> Started with a couple snow days with the kids. And now I’m on new adventures. Inspired by the work of Wayne White.
+                  <strong>New pastimes:</strong> Found this book <em>Barbarian Days</em>, and I’m really enjoying it. Maybe it’s just the time of year coming out of summer, but I think I’m going to become a surfer… stay tuned for winter 2026.
                 </p>
               </div>
             </section>
